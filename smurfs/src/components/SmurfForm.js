@@ -24,7 +24,7 @@ export default function (smurfletons) {
     }
 
     return(
-        <form>
+        <form className='formClass'>
             <input name='name' placeholder='name' onChange={handleChanges} value={newSmurfs.name}/>
             <input name='height' placeholder='height' onChange={handleChanges} value={newSmurfs.height}/>
             <input name='age'placeholder='age' onChange={handleChanges} value={newSmurfs.age}/>

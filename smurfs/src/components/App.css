@@ -1,3 +1,24 @@
 .App {
   text-align: center;
 }
+.smurfCards{
+  width:40%;
+  margin:auto;
+  padding:20px;
+  background-color:#9cc0e7;
+  border-radius:15px;
+
+}
+
+.formClass{
+  margin-top:2%;
+  margin-bottom:2%;
+}
+
+.headerTag{
+  border-radius:15px;
+  width:50%;
+  margin:auto;
+  padding:20px;
+  background-color:#9cc0e7;
+}

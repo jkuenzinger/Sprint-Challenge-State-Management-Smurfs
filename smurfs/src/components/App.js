@@ -23,12 +23,12 @@ export default function App () {
       .then(res => setSmurfState(res.data))
       .catch(error => console.log('error recieving data', error))
     }
-    function updateSmurfs(smurf){
-      axios
-        .put('http://localhost:3333/smurfs', smurf)
-        .then(res => setSmurfState(res.data))
-        .catch(error => console.log('error putting smurf ', error))
-    }
+    // function updateSmurfs(smurf){
+    //   axios
+    //     .put(`http://localhost:3333/smurfs/${smurf.id}`, smurf)
+    //     .then(res => setSmurfState(res.data))
+    //     .catch(error => console.log('error putting smurf ', error))
+    // }
 
     useEffect(() => {
       getSmurfs();
@@ -36,11 +36,12 @@ export default function App () {
     
     return (
       <div className="App">
-      
+        <h1 className='headerTag'>CIA Smurf Watch List!</h1>
+        <SmurfForm post={postSmurfs}/>
           <smurfContext.Provider>
           <SmurfList smurfs={smurfState}/>
         </smurfContext.Provider>
-        <SmurfForm post={postSmurfs}/>
+        
       </div>
     );
   }
